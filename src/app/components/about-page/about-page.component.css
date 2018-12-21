@@ -1,0 +1,10 @@
+.cursor {
+    display: inline-block;
+    width: 10px;
+    background: #e14283;
+    height: 80px;
+    -webkit-transform: translateY(8px) translateX(-18px);
+    -ms-transform: translateY(8px) translateX(-18px);
+    -webkit-animation: .7s infinite blink;
+    animation: .7s infinite blink;   
+}
