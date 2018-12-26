@@ -1,6 +1,6 @@
 <div class="sidenav">
   <ng-container *ngFor="let page of pages;">
-    <a [routerLink]="page.href">{{page.title}}</a>
+    <a [routerLink]="page.href"><span>#</span> <span class="textTitle"> {{page.title}}</span></a>
   </ng-container>
 </div>
 <div class="main">

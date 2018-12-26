@@ -27,8 +27,22 @@
     font-size: 28px;
     padding: 0px 10px;
   }
+
+  .textTitle {
+
+  }
   
   @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
+  }
+
+  @media screen and (max-width: 720px) {
+    .sidenav {
+      width: 50px;
+    }
+
+    .textTitle {
+      display: none;
+    }
   }

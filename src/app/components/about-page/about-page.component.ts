@@ -10,7 +10,7 @@ export class AboutPageComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    this.typeWriter()
+    // this.typeWriter()
   }
 
   i = 0;
