@@ -11,7 +11,7 @@
   }
   
   .sidenav a {
-    padding: 6px 8px 6px 16px;
+    padding: 4px 6px 4px 10px;
     text-decoration: none;
     font-size: 21px;
     color: #818181;
@@ -26,10 +26,11 @@
     margin-left: 160px;
     font-size: 28px;
     padding: 0px 10px;
+    line-height: 1.7em;
   }
 
   .textTitle {
-
+    display: default;
   }
   
   @media screen and (max-height: 450px) {
@@ -39,11 +40,11 @@
 
   @media screen and (max-width: 720px) {
     .sidenav {
-      width: 50px;
+      width: 48px;
     }
 
     .main {
-      margin-left: 50px;
+      margin-left: 48px;
       font-size: 16px;
     }
 

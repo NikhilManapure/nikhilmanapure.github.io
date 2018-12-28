@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -10,19 +9,32 @@ export class AppComponent {
   pages = [
     {
       href: "about",
-      title: "About"
+      title: "About",
+      icon: "fas fa-user-alt",
+      fontSize: 21
     },
     {
       href: "apps",
-      title: "Apps"
+      title: "Apps",
+      icon: "fab fa-app-store",
+      fontSize: 25
     },
     {
       href: "resume",
-      title: "Resume"
+      title: "Resume",
+      icon: "far fa-address-card",
+      fontSize: 21
     },
     {
       href: "contact",
-      title: "Contact"
+      title: "Contact",
+      icon: "fab fa-telegram-plane",
+      fontSize: 25
     },
   ]
+
+  isCurrentPage(index) {
+    var strs = window.location.href.split("/");
+    return strs[strs.length - 1] === this.pages[index].href ? "#ce5374" : "#818181"
+  }
 }
