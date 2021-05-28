@@ -37,21 +37,21 @@ window.onload = function() {
  	}
 }
 
-window.onhashchange = function() { 
-    console.log('locccccc changed!');
-	
-}
-
 window.addEventListener("message", (event) => {
-      console.log('asdfasdfd changed!');
+      var productDetailPageRegex = new RegExp("^https?://[^/]+/product/")
+ 	if(productDetailPageRegex.test(window.location.href)){
+    	document.getElementById('video-button').style.visibility='visible';
+ 	}else{
+   		document.getElementById('video-button').style.visibility='hidden';
+ 	}
 }, false);
 
 window.addEventListener('popstate', function(){
     console.log('location changed!');
-// 	var productDetailPageRegex = new RegExp("^https?://[^/]+/product/")
-//  	if(productDetailPageRegex.test(window.location.href)){
-//     	document.getElementById('video-button').style.visibility='visible';
-//  	}else{
-//    		document.getElementById('video-button').style.visibility='hidden';
-//  	}
+	var productDetailPageRegex = new RegExp("^https?://[^/]+/product/")
+ 	if(productDetailPageRegex.test(window.location.href)){
+    	document.getElementById('video-button').style.visibility='visible';
+ 	}else{
+   		document.getElementById('video-button').style.visibility='hidden';
+ 	}
 })
