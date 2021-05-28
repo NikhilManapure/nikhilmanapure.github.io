@@ -13,7 +13,7 @@ body.appendChild(button);
 button.addEventListener("click", function() {
 	var pathname = new URL(document.location).pathname;
 	var productSlug = pathname.split("/")[2]
-    var videoAssistancePageUrl ="https://"+ document.location.hostname + "/form/" + "video-assistance"
+    var videoAssistancePageUrl ="https://"+ document.location.hostname + "/form/" + "form-input"
     
     var urlToRedirect =  new URL(videoAssistancePageUrl);
 	urlToRedirect.searchParams.append('attachments',JSON.stringify([{
@@ -28,7 +28,7 @@ button.addEventListener("click", function() {
     }).click();
 });
 
-window.onload = function initSupportButtonState() {
+window.onload = function() {
  var productDetailPageRegex = new RegExp("^https?://[^/]+/product/")
  	if(productDetailPageRegex.test(window.location.href)){
     	document.getElementById('video-button').style.visibility='visible';
