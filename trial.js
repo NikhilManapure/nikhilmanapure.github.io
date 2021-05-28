@@ -37,6 +37,10 @@ window.onload = function() {
  	}
 }
 
+window.onhashchange = function() { 
+    console.log('locccccc changed!');
+}
+
 window.addEventListener('popstate', function(){
     console.log('location changed!');
 // 	var productDetailPageRegex = new RegExp("^https?://[^/]+/product/")
