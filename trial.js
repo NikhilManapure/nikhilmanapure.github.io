@@ -36,3 +36,13 @@ window.onload = function() {
    		document.getElementById('video-button').style.visibility='hidden';
  	}
 }
+
+window.addEventListener('locationchange', function(){
+    console.log('location changed!');
+	var productDetailPageRegex = new RegExp("^https?://[^/]+/product/")
+ 	if(productDetailPageRegex.test(window.location.href)){
+    	document.getElementById('video-button').style.visibility='visible';
+ 	}else{
+   		document.getElementById('video-button').style.visibility='hidden';
+ 	}
+})
