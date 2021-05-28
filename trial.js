@@ -39,7 +39,12 @@ window.onload = function() {
 
 window.onhashchange = function() { 
     console.log('locccccc changed!');
+	
 }
+
+window.addEventListener("message", (event) => {
+      console.log('asdfasdfd changed!');
+}, false);
 
 window.addEventListener('popstate', function(){
     console.log('location changed!');
