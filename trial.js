@@ -1,3 +1,4 @@
+console.log("asdf")
 var style = document.createElement("style")
 style.innerHTML = style.innerHTML + "#video-button{visibility:hidden; position:fixed; bottom:0; right:0; margin-right:40px; margin-bottom:40px; background-color:#2a3eb1; border-radius:50px; height:60px; width:60px; color:#FFF; box-shadow: 2px 2px 3px #999; z-index:100; .my-float{margin-top:16px;}}"
 document.head.appendChild(style)
